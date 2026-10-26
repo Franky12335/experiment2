@@ -1,0 +1,23 @@
+training_optimization:
+  seed: 42
+  total_training_steps: 150
+  epoch_cap: 150
+  resume_mode: disable
+  learning_rate: 1.0e-6
+  lr_warmup_steps: 15
+  warmup_style: constant
+  entropy_coef: 0.001
+  clip_ratio: 0.2
+  grad_clip: 1.0
+  adamw_betas: [0.9, 0.999]
+  weight_decay: 0.01
+  group_size: 8
+  train_temperature: 1.0
+  task_config:
+    searchqa:
+      train_batch_size: 128
+      ppo_mini_batch_size: 256
+      ppo_micro_batch_size_per_gpu: 16
+      n_gpus: 4
+      kl_loss_coef: 0.001
+      invalid_action_penalty_coef: 0.01

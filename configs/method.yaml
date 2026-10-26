@@ -1,0 +1,19 @@
+method:
+  name: obs_distill
+  guidance_coef: 0.02
+  gate_beta: 1.0
+  skills:
+    directory: skills
+    max_skills: 3
+
+profiles:
+  qwen2.5_3b:
+    num_content_samples: 4
+    action_budget_hint: true
+    normalization: content_positions
+    teacher_context: messages
+  qwen3_1.7b:
+    num_content_samples: 1
+    action_budget_hint: false
+    normalization: response_positions
+    teacher_context: prefix

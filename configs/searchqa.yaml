@@ -1,0 +1,7 @@
+task:
+  name: searchqa
+  environment: search
+  train_file: searchqa/processed/train.parquet
+  val_file: searchqa/processed/test.parquet
+  max_turns: 4
+  history_length: 4

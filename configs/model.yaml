@@ -1,0 +1,14 @@
+model:
+  backbones:
+    qwen2.5_3b:
+      name: qwen2.5
+      size: 3b
+      repository: Qwen/Qwen2.5-3B-Instruct
+      directory: qwen2.5_3b_instruct
+      enable_thinking: false
+    qwen3_1.7b:
+      name: qwen3
+      size: 1.7b
+      repository: Qwen/Qwen3-1.7B
+      directory: qwen3_1.7b
+      enable_thinking: false

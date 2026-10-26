@@ -1,0 +1,4 @@
+training:
+  seed: 42
+  max_prompt_length: 4096
+  max_response_length: 512

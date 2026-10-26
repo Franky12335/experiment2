@@ -1,0 +1,10 @@
+retrieval:
+  encoder: e5-base-v2
+  repository: intfloat/e5-base-v2
+  corpus: searchqa/wiki-18.jsonl
+  index: searchqa/e5_Flat.index
+  topk: 3
+  host: 127.0.0.1
+  port: 8000
+  gpu: 0
+  faiss_gpu: false

@@ -1,0 +1,4 @@
+evaluation:
+  test_freq: 150
+  val_before_train: false
+  val_batch_size: 512

@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+/models/
+/outputs/
+.cache/
+.env
+*.log
+*.tar.gz
+data/searchqa/wiki-18.jsonl
+data/searchqa/e5_Flat.index
+data/searchqa/raw_index/
+data/searchqa/raw_corpus/

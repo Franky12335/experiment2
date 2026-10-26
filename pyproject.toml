@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anonymous-sdrd"
+version = "1.0.0"
+description = "Main SearchQA training and evaluation code for SDRD"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = {text = "Apache-2.0; third-party components retain their licenses"}
+
+[tool.setuptools.packages.find]
+include = ["web_agent*", "agent_system*", "verl*", "search_r1*"]
+exclude = ["outputs*", "data*", "models*"]
+
+[tool.setuptools.package-data]
+verl = ["version/version", "trainer/config/*.yaml", "trainer/runtime_env.yaml"]
+agent_system = ["**/*.html", "**/LICENSE*", "**/*.txt"]

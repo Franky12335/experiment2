@@ -1,0 +1,5 @@
+vllm:
+  tensor_model_parallel_size: 1
+  gpu_memory_utilization: 0.5
+  log_prob_micro_batch_size_per_gpu: 32
+  log_prob_max_token_len_per_gpu: 16384
